@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>REVOLVE</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="iconLogo_transp.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="  crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="crossorigin=""></script>
+
+    <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+    <script type="text/javascript">Bokeh.set_log_level("info");</script>
+
+  </head>
+  <body>
+    </body>
+</html>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="fullLogo_transp.png" width="180" height="30" class="d-inline-block align-top" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="manage_dash.html">Dashboad</a>
+        </li> 
+		    <li class="nav-item active">
+          <a class="nav-link active" href="manage_portfolio.html">Portfolio</a>
+        </li>
+      </ul>
+    </div>
+	<a class="btn btn-outline-success" href="manage_dash.html" role="button">Manage</a>
+  <p>&nbsp;</p>
+  <a class="btn btn-outline-danger" href="login.html" role="button">Log out</a>
+  </div>
+</nav>
+
+
+
+
+<div class="container">
+
+<div style="margin-top:50px"></div>
+<h1>Producers portfolio</h1>
+<div style="margin-top:30px"></div>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Producer</th>
+      <th scope="col">Max. capacity</th>
+      <th scope="col">REVOLVE Tokens</th>
+      <th scope="col">Producer level</th>
+      <th scope="col">Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Metody Zaucha</b></td>
+      <td>15 MW</td>
+      <td>18791</td>
+      <td>Revolver</td>
+      <td>
+        <a class="btn btn-outline-danger btn-sm" href="overview.html" role="button">Client view</a>
+        <a class="btn btn-outline-danger btn-sm" href="overview.html" role="button">Manage objectives</a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Horacy Sudol</b></td>
+      <td>10 MW</td>
+      <td>6732</td>
+      <td>Committed</td>
+      <td>
+        <a class="btn btn-outline-danger btn-sm" href="overview.html" role="button">Client view</a>
+        <a class="btn btn-outline-danger btn-sm" href="overview.html" role="button">Manage objectives</a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Teofil Niewiński</b></td>
+      <td>6 MW</td>
+      <td>4863</td>
+      <td>Awared</td>
+      <td>
+        <a class="btn btn-outline-danger btn-sm" href="overview.html" role="button">Client view</a>
+        <a class="btn btn-outline-danger btn-sm" href="overview.html" role="button">Manage objectives</a>
+      </td>
+    </tr>    
+    <tr>
+      <td><b>Daniel Szczepański</b></td>
+      <td>2 MW</td>
+      <td>2511</td>
+      <td>Starter</td>
+      <td>
+        <a class="btn btn-outline-danger btn-sm" href="overview.html" role="button">Client view</a>
+        <a class="btn btn-outline-danger btn-sm" href="overview.html" role="button">Manage objectives</a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Sławomir Legerski</b></td>
+      <td>3 MW</td>
+      <td>2198</td>
+      <td>Starter</td>
+      <td>
+        <a class="btn btn-outline-danger btn-sm" href="overview.html" role="button">Client view</a>
+        <a class="btn btn-outline-danger btn-sm" href="overview.html" role="button">Manage objectives</a>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Zenon Rogiński</b></td>
+      <td>5 MW</td>
+      <td>852</td>
+      <td>Starter</td>
+      <td>
+        <a class="btn btn-outline-danger btn-sm" href="overview.html" role="button">Client view</a>
+        <a class="btn btn-outline-danger btn-sm" href="overview.html" role="button">Manage objectives</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+<div style="margin-top:200px"></div>
+</div>
+
